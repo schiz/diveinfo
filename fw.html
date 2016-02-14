@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+
+<script src="js/html5shiv.js"></script>
+
+<html> <!--<![endif]-->
+ <html> 
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title></title> 
+     <link rel="stylesheet/less" type="text/css" href="css/styles.less">
+     <link rel="stylesheet/less" type="text/css" href="framework/css/styles.less">
+       <!-- <link rel="stylesheet/less" type="text/css" href="css/mods.less"> -->
+	<link rel="stylesheet/less" type="text/css" href="css/jquery-ui-1.10.3.custom.css">
+
+
+
+ <script type="text/javascript">less = { env: 'development' };</script>
+	<script type="text/javascript" src="js/vendor.js"></script>
+
+	<script src="js/jquery-1.9.1.js"></script>
+
+	<script src="js/jquery-ui-1.10.3.custom.js"></script>
+
+
+
+
+     <script src="js/less.js" type="text/javascript"></script>
+     <script src="framework/js/fw.js" type="text/javascript"></script>
+      <script src="js/jquery.validate.min.js" type="text/javascript"></script>
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />    -->
+    <link rel="stylesheet" type="text/css" href="css/rateit.css" />
+
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+<div class="topNavWrapper"></div>
+<!-- Main container start -->
+<section class="container">
+<nav class="top">
+	<a href="">Клубы</a>
+	<a href="">Туры</a>
+	<a href="">Обучение</a>
+	<a href="">Работа</a>
+	<a href="">Дайверы</a>
+	<a href="">Новости</a>
+	<a href="" class="active">Технодайвинг</a>
+	<a href="">Снаряжение</a>
+	<a href="">Энциклопедия</a>
+	<a href="" class="last">Форум</a>
+
+
+	<figure class="changeLang">
+		<aside>
+			<figure class="fw-icon flag-ru active"><span>RU</span></figure>
+		</aside>
+		<ul>
+			<li><a href="" onclick="click(); return false;"><figure class="fw-icon flag-ua"><span>UA</span></figure></a></li>
+			<li><a href="" onclick="click(); return false;"><figure class="fw-icon flag-us"><span>US</span></figure></a></li>
+		</ul>
+	</figure>
+</nav>
+
+
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- ПЕРВЫЙ ХИДЕР -->
+
+<!-- Header start -->
+<header class="firstHeader">
+	<section class="onTop">
+		<a href="/" class="logo"><img src="images/logo.png"></a>
+		<figure class="diversMap"></figure>
+
+		<figure class="diversIcon">
+			<a href="#" class="fw-icon map"></a>
+		</figure>
+
+		<figure class="login-block">
+			<figure class="usersMenu">
+				<span class=""><i class="fw-icon user"></i>Привет, михаил<i class="fw-icon arrow-down"></i></span>
+				<ul class='wide-userMenu'>
+					<li><a href="">1</a></li>
+					<li><a href="">2</a></li>
+					<li><a href="">3</a></li>
+				</ul>
+			</figure>
+			<figure class="friends">
+				<i class="fw-icon friends"></i>
+				<a href="">9</a>
+			</figure>
+			<figure class="message">
+				<i class="fw-icon message"></i>
+				<a href="">9</a>
+			</figure>
+
+			<!--
+			<div class="login">
+				<i class="fw-icon login-key"></i><a href="#">вход</a>
+			</div>
+			<div class="register">
+				<i class="fw-icon login-register"></i>
+				<a href="#">регистрация</a>
+			</div>
+			<!---->
+		</figure>
+		<figure class="socialShare">
+			<a href="#" class="fw-icon social-fb"></a>
+			<a href="#" class="fw-icon social-tw"></a>
+			<a href="#" class="fw-icon social-vk"></a>
+		</figure>
+	</section>
+
+
+
+	<section class="tabs fw-tabs">
+			<table class="divePageMenu mainNavigation">
+				<tbody>
+					<tr>
+					<td class="fw-tab first-tab active">
+						<a href="#"><i class="fw-icon ship"></i>Найти дайвклуб</a>
+					</td>
+
+					<td class="fw-tab second-tab">
+						<a href="#"><i class="fw-icon designator"></i>Найти тур</a>
+					</td>
+
+					<td class="fw-tab third-tab">
+						<a href="#"><i class="fw-icon lifebuoy"></i>Найти курсы</a>
+					</td>
+
+					<td class="fw-tab fourth-tab">
+						<a href="#"><i class="fw-icon anchor"></i>Найти работу</a>
+					</td>
+
+					<td class="fw-tab five-tab">
+						<a href="#"><i class="fw-icon diver"></i>Найти дайвера</a>
+					</td>
+
+					<td class="fw-tab last-tab">
+						<a href="#"><i class="fw-icon magnifier"></i>Общий поиск</a>
+					</td>
+
+
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+	<section class="searchTabs">
+		<div class="fw-tab-block diveclub">
+			<form>
+				<input type="text" class="fw-white" value="D-diver">
+
+				<div data-label="Все страны" class="dropdown fw-dropdown fw-white">
+					<ul>
+						<li><span>страна 1</span></li>
+						<li><span>страна 2</span></li>
+						<li><span>страна 3</span></li>
+					</ul>
+				</div>
+				<div data-label="Все города" class="dropdown fw-dropdown fw-white">
+					<ul>
+						<li><span>город 1</span></li>
+						<li><span>город 2</span></li>
+						<li><span>город 3</span></li>
+					</ul>
+				</div>
+				<div data-label="Все школы" class="dropdown fw-dropdown fw-white">
+					<ul>
+						<li><span>школа 1</span></li>
+						<li><span>школа 2</span></li>
+						<li><span>школа 3</span></li>
+					</ul>
+				</div>
+				<input type="submit" class="fw-submit fw-icon btn-find" value=""/>
+			</form>
+		</div>
+	</section>
+</header>
+<!-- Header end -->
+
+
+
+<!-- ПЕРВЫЙ ХИДЕР -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+
+
+
+<section style="height: 135px"></section>
+
+
+
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- ВТОРОЙ ХИДЕР -->
+
+
+<!-- Header start -->
+<div class="navBackground "></div>
+
+
+<nav class="top">
+	<a href="">Клубы</a>
+	<a href="">Туры</a>
+	<a href="">Обучение</a>
+	<a href="">Работа</a>
+	<a href="">Дайверы</a>
+	<a href="">Новости</a>
+	<a href="" class="active">Технодайвинг</a>
+	<a href="">Снаряжение</a>
+	<a href="">Энциклопедия</a>
+	<a href="" class="last">Форум</a>
+</nav>
+
+
+
+<header class="secondHeader">
+	<section class="onTop">
+		<a href="/" class="logo"><img src="images/logo.png"></a>
+		<figure class="diversMap"></figure>
+
+		<figure class="diversIcon">
+			<a href="#" class="fw-icon map"></a>
+		</figure>
+
+		<figure class="login-block">
+			<figure class="usersMenu">
+				<span class=""><i class="fw-icon user"></i>Привет, михаил<i class="fw-icon arrow-down"></i></span>
+				<ul>
+					<li><a href=""><i class="fw-icon message"></i>Сообщения<b> &nbsp &nbsp</b><span>9</span></a></li>
+					<li><a href=""><i class="fw-icon friends"></i>Друзья<b> &nbsp &nbsp</b><span>9</span></a></li>
+					<li><a href=""><i class="fw-icon baloons"></i>Профайл</a></li>
+					<li><a href=""><i class="fw-icon settings"></i>Настройки</a></li>
+					<li><a href=""><i class="fw-icon exit"></i>Выход</a></li>
+				</ul>
+			</figure>
+			<!--
+			<figure class="friends">
+				<i class="fw-icon friends"></i>
+				<a href="">9</a>
+			</figure>
+			<figure class="message">
+				<i class="fw-icon message"></i>
+				<a href="">9</a>
+			</figure>
+			<!---->
+
+			<!--
+			<div class="login">
+				<i class="fw-icon login-key"></i><a href="#">вход</a>
+			</div>
+			<div class="register">
+				<i class="fw-icon login-register"></i>
+				<a href="#">регистрация</a>
+			</div>
+			<!---->
+		</figure>
+		<figure class="socialShare">
+			<a href="#" class="fw-icon social-fb"></a>
+			<a href="#" class="fw-icon social-tw"></a>
+			<a href="#" class="fw-icon social-vk"></a>
+		</figure>
+	</section>
+
+
+
+<section class="tabs fw-tabs">
+			<table class="divePageMenu mainNavigation">
+				<tbody>
+					<tr>
+					<td class="fw-tab first-tab active">
+						<a href="#"><i class="fw-icon ship"></i>Найти дайвклуб</a>
+					</td>
+
+					<td class="fw-tab second-tab">
+						<a href="#"><i class="fw-icon designator"></i>Найти тур</a>
+					</td>
+
+					<td class="fw-tab third-tab">
+						<a href="#"><i class="fw-icon lifebuoy"></i>Найти курсы</a>
+					</td>
+
+					<td class="fw-tab fourth-tab">
+						<a href="#"><i class="fw-icon anchor"></i>Найти работу</a>
+					</td>
+
+					<td class="fw-tab five-tab">
+						<a href="#"><i class="fw-icon diver"></i>Найти дайвера</a>
+					</td>
+
+					<td class="fw-tab last-tab">
+						<a href="#"><i class="fw-icon magnifier"></i>Общий поиск</a>
+					</td>
+
+
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+	<section class="searchTabs">
+		<div class="fw-tab-block diveclub">
+			<form>
+				<input type="text" class="fw-white" value="D-diver">
+
+				<div data-label="Все страны" class="dropdown fw-dropdown fw-white">
+					<ul>
+						<li><span>страна 1</span></li>
+						<li><span>страна 2</span></li>
+						<li><span>страна 3</span></li>
+					</ul>
+				</div>
+				<div data-label="Все города" class="dropdown fw-dropdown fw-white">
+					<ul>
+						<li><span>город 1</span></li>
+						<li><span>город 2</span></li>
+						<li><span>город 3</span></li>
+					</ul>
+				</div>
+				<div data-label="Все школы" class="dropdown fw-dropdown fw-white">
+					<ul>
+						<li><span>школа 1</span></li>
+						<li><span>школа 2</span></li>
+						<li><span>школа 3</span></li>
+					</ul>
+				</div>
+				<input type="submit" class="fw-submit fw-icon btn-find" value=""/>
+			</form>
+		</div>
+	</section>
+</header>
+<!-- Header end -->
+
+
+<!-- ВТОРОЙ ХИДЕР -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+
+
+
+<section style="height: 58px"></section>
+
+
+
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- ХИДЕР БЕЗ АВТОРИЗАЦИИ -->
+<!-- Header start -->
+
+<div class="navBackground "></div>
+
+
+<nav class="top">
+	<a href="">Клубы</a>
+	<a href="">Туры</a>
+	<a href="">Обучение</a>
+	<a href="">Работа</a>
+	<a href="">Дайверы</a>
+	<a href="">Новости</a>
+	<a href="" class="active">Технодайвинг</a>
+	<a href="">Снаряжение</a>
+	<a href="">Энциклопедия</a>
+	<a href="" class="last">Форум</a>
+</nav>
+
+<header class="notAuth">
+	<section class="onTop">
+		<a href="/" class="logo"><img src="images/logo.png"></a>
+		<figure class="diversMap"></figure>
+
+		<figure class="diversIcon">
+			<a href="#" class="fw-icon map"></a>
+		</figure>
+
+		<figure class="login-block">
+
+			<figure class="authBlock">
+				<span class="login">
+					<i class="fw-icon login-key"></i><a href="#">вход</a>
+				</span>
+				<span class="register">
+					<i class="fw-icon login-register"></i>
+					<a href="#">регистрация</a>
+				</span>
+			</figure>
+
+			<!---->
+		</figure>
+		<figure class="socialShare">
+			<a href="#" class="fw-icon social-fb"></a>
+			<a href="#" class="fw-icon social-tw"></a>
+			<a href="#" class="fw-icon social-vk"></a>
+		</figure>
+	</section>
+
+
+
+<section class="tabs fw-tabs">
+			<table class="divePageMenu mainNavigation">
+				<tbody>
+					<tr>
+					<td class="fw-tab first-tab active">
+						<a href="#"><i class="fw-icon ship"></i>Найти дайвклуб</a>
+					</td>
+
+					<td class="fw-tab second-tab">
+						<a href="#"><i class="fw-icon designator"></i>Найти тур</a>
+					</td>
+
+					<td class="fw-tab third-tab">
+						<a href="#"><i class="fw-icon lifebuoy"></i>Найти курсы</a>
+					</td>
+
+					<td class="fw-tab fourth-tab">
+						<a href="#"><i class="fw-icon anchor"></i>Найти работу</a>
+					</td>
+
+					<td class="fw-tab five-tab">
+						<a href="#"><i class="fw-icon diver"></i>Найти дайвера</a>
+					</td>
+
+					<td class="fw-tab last-tab">
+						<a href="#"><i class="fw-icon magnifier"></i>Общий поиск</a>
+					</td>
+
+
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section class="searchTabs searchDiveClub">
+			<div class="fw-tab-block diveclub">
+				<form>
+					<input type="text" class="fw-white" value="D-diver">
+
+					 <select data-id="club-country">
+
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+
+					</select> 
+
+					<div data-id="club-country" data-label="Все страны" class="dropdown fw-dropdown fw-white">
+						<ul></ul>
+					</div>
+
+					<select data-id="club-city">
+
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+
+					</select> 
+
+					<div data-id="club-city" data-label="Все города" class="dropdown fw-dropdown fw-white">
+						<ul></ul>
+					</div>
+
+					<select data-id="club-school">
+
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+
+					</select> 
+
+					<div data-id="club-school" data-label="Все школы" class="dropdown fw-dropdown fw-white">
+						<ul></ul>
+					</div>
+					<input type="submit" class="fw-submit fw-icon btn-find" value=""/>
+				</form>
+			</div>
+		</section>
+</header>
+<!-- Header end -->
+
+
+<!-- ХИДЕР БЕЗ АВТОРИЗАЦИИ -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+<section style="height: 66px"></section>
+
+
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Блок сортировки -->
+
+			<section class="fw-sortBlock">
+				<span>Показывать:</span>
+
+				<a class="active-link" href="" onclick="click(); return false;">
+					<label>Уже нажатая</label>
+					<i class="fw-icon sortAll"></i>
+					<span>Все</span>
+				</a>
+
+				<a href="" onclick="click(); return false;">
+					<i class="fw-icon sortNews"></i>
+					<label>Ховер</label>
+					<span style="border:none">Новости</span>
+				</a>
+
+				<a href="" onclick="click(); return false;">
+					<label>Обычное состояние</label>
+					<i class="fw-icon sortRaports"></i>
+					<span>Отчеты</span>
+				</a>
+
+				<a href="" onclick="click(); return false;">
+					<i class="fw-icon sortArticles"></i>
+					<span>Посты</span>
+				</a>
+
+			</section><!-- .fw-sortBlock END -->
+
+<!-- Блок сортировки -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+
+
+<section style="height: 86px"></section>
+
+
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Блок новостей, отчётов, постов -->
+
+<section class="fm-photoPostNewRaport" style="padding-left: 37px;">
+	<article>
+		<label>Ховер</label>
+		<figure>
+			<img src="images/img1.jpg">
+		</figure>
+		<p>
+			<a href="google.com">Конкурс от PADI на лучшего инструктора</a>
+		</p>
+		<aside>
+			<i class="fw-icon sortNews"></i>
+			<span>Новость</span>
+		</aside>
+	</article>
+
+	<article>
+		<label>посещенная ссылка</label>
+		<figure>
+			<img src="images/img2.jpg">
+		</figure>
+		<p>
+			<a href="ya.ru">Новый тур нашего клуба - Малайзия</a>
+		</p>
+		<aside>
+			<i class="fw-icon sortRaports"></i>
+			<span>Отчёт</span>
+		</aside>
+	</article>
+
+	<article>
+		<label>Обычное состояние</label>
+		<figure>
+			<img src="images/img3.jpg">
+		</figure>
+		<p>
+			<a href="#">Как мы ныряли в Пхукете</a>
+		</p>
+		<aside>
+			<i class="fw-icon sortArticles"></i>
+			<span>Пост</span>
+		</aside>
+	</article>
+</section>
+
+<!-- Блок новостей, отчётов, постов -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+
+
+
+<section style="height: 60px"></section>
+
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Блок отзывов -->
+
+<section class="fw-commentsBlocks" style="padding-left: 43px;">
+	<article>
+		<h2 style="border-bottom: 2px solid #8C919F"><a href="">Отзывы о клубах</a></h2>
+		<label>Ховер</label>
+		<figure>
+			<h3><a href="" style="color: #35579f;text-decoration:underline;">Panorama Divers</a></h3>
+			<p>Неплохой клуб, инструкторы обучают тщательно, поясняя все нюансы.
+			Сразу видно, что любят свое дело...</p>
+		</figure>
+		<aside>
+			<p>Николай Петренко</p>
+			<div>
+				<i class="fw-icon clock"></i>
+				<span>
+					12.04.2013 в 16:15
+				</span>
+			</div>
+		</aside>
+	</article>
+
+
+	<article>
+		<h2><a href="">Отзывы о клубах</a></h2>
+		<label>посещенная ссылка</label>
+		<figure>
+			<h3><a href="">Panorama Divers</a></h3>
+			<p>Неплохой клуб, инструкторы обучают тщательно, поясняя все нюансы.
+				Сразу видно, что любят свое дело...</p>
+		</figure>
+		<aside>
+			<p>Николай Петренко</p>
+			<div>
+				<i class="fw-icon clock"></i>
+				<span>
+					12.04.2013 в 16:15
+				</span>
+			</div>
+		</aside>
+	</article>
+
+
+	<article>
+		<h2><a href="">Отзывы о клубах</a></h2>
+		<label>Обычное состояние</label>
+		<figure>
+			<h3><a href="" style="color: #35579f;">Panorama Divers</a></h3>
+			<p>Неплохой клуб, инструкторы обучают тщательно, поясняя все нюансы.
+				Сразу видно, что любят свое дело...</p>
+		</figure>
+		<aside>
+			<p>Николай Петренко</p>
+			<div>
+				<i class="fw-icon clock"></i>
+				<span>
+					12.04.2013 в 16:15
+				</span>
+			</div>
+		</aside>
+	</article>
+</section>
+
+<!-- Блок отзывов -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+
+<!-- Блок кнопок -->
+<section style="height: 74px"></section>
+
+
+<section class="fw-buttons-status">
+	<article>
+		<label>Обычное состояние</label>
+		<input type="submit" class="fw-submit fw-icon btn-find" value="" style="background-position: 0px -140px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-enter" value="" style="background-position: 0px -244px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-send" value="" style="background-position: -117px -244px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-registration" value="" style="background-position: -264px -244px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-addTestimomial" value="" style="background-position: -428px -244px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-subscribe" value="" style="background-position: 0px -396px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-writeMessage" value="" style="background-position: -614px -244px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-addToFriends" value="" style="background-position: -203px -396px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-divingWithClub" value="" style="background-position: -406px -396px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-addClub" value="" style="background-position: -614px -396px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-reportError" value="" style="background-position: 0px -544px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-divingWithClubGrey" value="" style="background-position: -204px -544px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-subscribeGrey" value="" style="background-position: -416px -543px;"><br>
+
+
+		<input type="submit" class="fw-submit fw-icon btn-jobOffer" value="" style="background-position: 0px -831px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-viewContacts" value="" style="background-position: -215px -831px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-sendResume" value="" style="background-position: -816px -244px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-subscribe-short" value="" style="background-position: -630px -831px;
+"><br>
+		<input type="submit" class="fw-submit fw-icon btn-reserve" value="" style="background-position: -793px -831px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-join" value="" style="background-position: -694px -682px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-find-vacancy" value="" style="background-position: -633px -543px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-find-resume" value="" style="background-position: -814px -543px;"><br>
+
+	</article>
+
+
+	<article>
+		<label>Ховер</label>
+		<input type="submit" class="fw-submit fw-icon btn-find" value="" style="background-position: 0px -175px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-enter" value="" style="background-position: 0px -292px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-send" value="" style="background-position: -117px -292px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-registration" value="" style="background-position: -264px -292px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-addTestimomial" value="" style="background-position: -428px -292px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-subscribe" value="" style="background-position: 0px -445px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-writeMessage" value="" style="background-position: -614px -293px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-addToFriends" value="" style="background-position: -203px -445px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-divingWithClub" value="" style="background-position: -406px -445px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-addClub" value="" style="background-position: -614px -445px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-reportError" value="" style="background-position: 0px -582px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-divingWithClubGrey" value="" style="background-position: -204px -593px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-subscribeGrey" value="" style="background-position: -417px -592px;"><br>
+
+		<input type="submit" class="fw-submit fw-icon btn-jobOffer" value="" style="background-position: 0px -883px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-viewContacts" value="" style="background-position: -215px -883px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-sendResume" value="" style="background-position: -816px -293px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-subscribe-short" value="" style="background-position: -630px -883px;
+"><br>
+		<input type="submit" class="fw-submit fw-icon btn-reserve" value="" style="background-position: -793px -883px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-join" value="" style="background-position: -694px -731px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-find-vacancy" value="" style="background-position: -633px -592px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-find-resume" value="" style="background-position: -814px -592px;"><br>
+
+	</article>
+
+
+	<article>
+		<label>Нажатие</label>
+		<input type="submit" class="fw-submit fw-icon btn-find" value="" style="background-position: 0px -210px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-enter" value="" style="background-position: 0px -340px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-send" value="" style="background-position: -117px -340px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-registration" value="" style="background-position: -264px -340px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-addTestimomial" value="" style="background-position: -428px -340px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-subscribe" value="" style="background-position: 0px -494px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-writeMessage" value="" style="background-position: -614px -341px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-addToFriends" value="" style="background-position: -203px -493px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-divingWithClub" value="" style="background-position: -406px -493px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-addClub" value="" style="background-position: -614px -493px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-reportError" value="" style="background-position: 0px -620px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-divingWithClubGrey" value="" style="background-position: -203px -642px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-subscribeGrey" value="" style="background-position: -416px -641px;"><br>
+
+		<input type="submit" class="fw-submit fw-icon btn-jobOffer" value="" style="background-position: 0px -933px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-viewContacts" value="" style="background-position: -215px -933px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-sendResume" value="" style="background-position: -816px -341px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-subscribe-short" value="" style="background-position: -630px -933px;
+"><br>
+		<input type="submit" class="fw-submit fw-icon btn-reserve" value="" style="background-position: -793px -933px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-join" value="" style="background-position: -694px -780px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-find-vacancy" value="" style="background-position: -633px -543px;"><br>
+		<input type="submit" class="fw-submit fw-icon btn-find-resume" value="" style="background-position: -814px -641px;"><br>
+	</article>
+</section>
+
+<!-- Блок кнопок -->
+
+
+
+
+<section style="height: 51px"></section>
+
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Пагинация 1 -->
+
+
+<section class="fw-pageFlipping" style="padding-left: 120px;">
+
+	<i class="fw-icon arrow-left"></i>
+	<a class="back" href="" style="color:#8A8A8A">Назад</a>
+
+	<a class="active" href="">1</a>
+	<a href="">2</a>
+	<a href="">3</a>
+	<a href="">4</a>
+	<a href="">5</a>
+	<span>...</span>
+	<a href="">12</a>
+
+	<a class="forward" href="" style="text-decoration:underline">Вперед</a>
+	<i class="fw-icon arrow-right"></i>
+</section>
+
+
+<section style="height: 28px"></section>
+
+
+<section class="fw-pageFlipping" style="padding-left: 120px;">
+
+	<i class="fw-icon arrow-left"></i>
+	<a class="back" href="">Назад</a>
+
+	<a class="active" href="">1</a>
+	<a href="">2</a>
+	<a href="">3</a>
+	<a href="">4</a>
+	<a href="">5</a>
+	<span>...</span>
+	<a href="">12</a>
+
+	<a class="forward" href="">Вперед</a>
+	<i class="fw-icon arrow-right"></i>
+
+<input type="text" class="fw-white" id="fw-calendar"> 
+</section>
+
+
+<!-- Пагинация 1 -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------- -->
+
+
+
+<section style="height: 71px"></section>
+
+<section class="fw-social-network">
+
+	<figure class="socialShare">
+					<a href="#" class="fw-icon social-fb" style="background-position: -262px 0px;"></a>
+					<a href="#" class="fw-icon social-tw" style="background-position: -295px 0px;"></a>
+					<a href="#" class="fw-icon social-vk" style="background-position: -328px 0px;"></a>
+	</figure>
+	
+	<figure class="socialShare">
+					<a href="#" class="fw-icon social-fb" style="background-position: -262px -45px;"></a>
+					<a href="#" class="fw-icon social-tw" style="background-position: -295px -45px;"></a>
+					<a href="#" class="fw-icon social-vk" style="background-position: -328px -45px;"></a>
+	</figure>
+
+
+	<figure class="socialShare">
+					<a href="#" class="fw-icon social-fb" style="background-position: -262px -90px;"></a>
+					<a href="#" class="fw-icon social-tw" style="background-position: -295px -90px;"></a>
+					<a href="#" class="fw-icon social-vk" style="background-position: -328px -90px;"></a>
+	</figure>
+
+</section>
+
+<section style="height: 33px"></section>
+
+<section class="fw-interactive-map">
+
+	<figure class="diversIcon">
+		<a href="#" class="fw-icon map" style="background-position: 0px 0px;"></a>
+	</figure>
+
+	<figure class="diversIcon">
+		<a href="#" class="fw-icon map" style="background-position: 0px -45px;"></a>
+	</figure>
+
+	<figure class="diversIcon">
+		<a href="#" class="fw-icon map" style="background-position: 0px -90px;"></a>
+	</figure>
+
+</section>
+
+<section style="height: 33px"></section>
+
+
+<section class="fw-calendar">
+
+	<figure class="diversIcon">
+		<a href="#" class="fw-icon eye-icon" style="background-position:  -217px -145px;"></a>
+		<a href="#" class="fw-icon calendar-icon" style="background-position:  -117px -174px;"></a>
+	</figure>
+
+	<figure class="diversIcon">
+		<a href="#" class="fw-icon eye-icon" style="background-position:  -217px -163px;"></a>
+		<a href="#" class="fw-icon calendar-icon" style="background-position:  -138px -174px;"></a>
+	</figure>
+
+	<figure class="diversIcon">
+		<a href="#" class="fw-icon eye-icon" style="background-position:  -217px -182px;"></a>
+		<a href="#" class="fw-icon calendar-icon" style="background-position:  -159px -174px;"></a>
+	</figure>
+
+</section>
+
+<section style="height: 67px"></section>
+
+
+
+<section class="fw-menu">
+
+	<figure class="diversIcon">
+		<input type="submit" class="fw-submit fw-icon btn-all" value="" style="background-position:  0px -693px;">
+		<input type="submit" class="fw-submit fw-icon btn-divers" value="" style="background-position:  -62px -693px;">
+		<input type="submit" class="fw-submit fw-icon btn-instructors" value="" style="background-position:  -190px -693px;">
+		<input type="submit" class="fw-submit fw-icon btn-geeks" value="" style="background-position:  -347px -693px;">
+		<input type="submit" class="fw-submit fw-icon btn-register" value="" style="background-position:  -469px -693px;">
+	</figure>
+
+	<figure class="diversIcon">
+		<input type="submit" class="fw-submit fw-icon btn-all" value="" style="background-position:  0px -738px;">
+		<input type="submit" class="fw-submit fw-icon btn-divers" value="" style="background-position:  -62px -738px;">
+		<input type="submit" class="fw-submit fw-icon btn-instructors" value="" style="background-position:  -190px -738px;">
+		<input type="submit" class="fw-submit fw-icon btn-geeks" value="" style="background-position:  -347px -738px;">
+		<input type="submit" class="fw-submit fw-icon btn-register" value="" style="background-position:  -469px -738px;">
+	</figure>
+
+	<figure class="diversIcon">
+		<input type="submit" class="fw-submit fw-icon btn-all" value="" style="background-position:  0px -783px;">
+		<input type="submit" class="fw-submit fw-icon btn-divers" value="" style="background-position:  -62px -783px;">
+		<input type="submit" class="fw-submit fw-icon btn-instructors" value="" style="background-position: -190px -783px;">
+		<input type="submit" class="fw-submit fw-icon btn-geeks" value="" style="background-position:  -347px -783px;">
+		<input type="submit" class="fw-submit fw-icon btn-register" value="" style="background-position:  -469px -783px;">
+	</figure>
+
+</section>
+
+
+
+<!-- content start
+<section class="content index">
+	<section class="left">
+		<h1>Публикации</h1>
+		<figure class="sorting">
+			<span class="title">Показывать:</span>
+			<a class="fw-sorting" href="#"><i class="fw-icon inbox"></i><span>Все</span></a>
+			<a class="fw-sorting" href="#"><i class="fw-icon news"></i><span>Новости</span></a>
+			<a class="fw-sorting" href="#"><i class="fw-icon camera"></i><span>Отчеты</span></a>
+			<a class="fw-sorting" href="#"><i class="fw-icon notepad"></i><span>Посты</span></a>
+		</figure>
+
+		<figure class="posts">
+			<div class="fw-post">
+				<img src="images/img1.jpg">
+				<a href="">Конкурс от PADI на лучшего инструктора</a>
+				<span class="fw-postType"><i class="fw-icon news"></i>Новость</span>
+			</div>
+
+			<div class="fw-post">
+				<img src="images/img2.jpg">
+				<a href="#1">Новый тур нашего клуба - Малайзия</a>
+						<span class="fw-postType">
+							<i class="fw-icon camera"></i>Отчет</span>
+			</div>
+
+			<div class="fw-post">
+				<img src="images/img3.jpg">
+				<a href="#2">Как мы ныряли на Пхукете</a>
+
+						<span class="fw-postType">
+							<i class="fw-icon notepad"></i>Пост</span>
+			</div>
+
+			<div class="fw-post">
+				<img src="images/img2.jpg">
+				<a href="">Конкурс от PADI на лучшего инструктора</a>
+						<span class="fw-postType">
+							<i class="fw-icon news"></i>Новость
+						</span>
+			</div>
+
+			<div class="fw-post">
+				<img src="images/img1.jpg">
+				<a href="#1">Новый тур нашего клуба - Малайзия</a>
+						<span class="fw-postType">
+							<i class="fw-icon camera"></i>Отчет</span>
+			</div>
+
+			<div class="fw-post">
+				<img src="images/img3.jpg">
+				<a href="#2">Как мы ныряли на Пхукете</a>
+						<span class="fw-postType">
+							<i class="fw-icon notepad"></i>Пост
+						</span>
+			</div>
+
+			<div class="fw-showMore">Показать еще...</div>
+		</figure>
+
+		<figure class="tours">
+			<h1>Туры</h1>
+
+			<div class="fw-post">
+				<img src="images/img4.jpg">
+
+				<div class="fw-postPrice">8 795<span class="fw-currency"> $</span></div>
+				<a href="">Дайв-сафари на Галапагосах Darwin & Wolf</a>
+						<span class="fw-country">
+							<i class="fw-icon markpoint"></i>Эквадор
+						</span>
+
+						<span class="fw-date">
+							<i class="fw-icon clock"></i>8 - 15 апреля 2013
+						</span>
+			</div>
+
+			<div class="fw-post">
+				<img src="images/img2.jpg">
+
+				<div class="fw-postPrice">5 906<span class="fw-currency"> $</span></div>
+				<a href="">Дайвинг на острове Кокос</a>
+						<span class="fw-country">
+							<i class="fw-icon markpoint"></i>Коста - Рика
+						</span>
+
+						<span class="fw-date">
+							<i class="fw-icon clock"></i>11 - 24 апреля 2013
+						</span>
+			</div>
+			<div class="fw-post">
+				<img src="images/img1.jpg">
+
+				<div class="fw-postPrice">2 700<span class="fw-currency"> $</span></div>
+				<a href="">Дайв-сафари в Судане с выходом из Египта</a>
+                    <span class="fw-country">
+                      <i class="fw-icon markpoint"></i> 
+                      Судан
+                    </span>
+                    <span class="fw-date">
+                      <i class="fw-icon clock"></i> 
+                      11 - 25 апреля 2013
+                    </span>
+			</div>
+			<div class="fw-post">
+				<img src="images/img3.jpg">
+
+				<div class="fw-postPrice">8 795<span class="fw-currency"> $</span></div>
+				<a href="">Дайв-сафари на Галапагосах Darwin & Wolf</a>
+                    <span class="fw-country">
+                      <i class="fw-icon markpoint"></i> 
+                      Эквадор
+                    </span>
+                    <span class="fw-date">
+                      <i class="fw-icon clock"></i> 
+                      8 - 15 апреля 2013
+                    </span>
+			</div>
+			<div class="fw-post">
+				<img src="images/img1.jpg">
+
+				<div class="fw-postPrice">5 906<span class="fw-currency"> $</span></div>
+				<a href="">Дайвинг на острове Кокос</a>
+                    <span class="fw-country">
+                      <i class="fw-icon markpoint"></i> 
+                      Коста - Рика
+                    </span>
+                    <span class="fw-date">
+                      <i class="fw-icon clock"></i> 
+                      11 - 24 апреля 2013
+                    </span>
+			</div>
+			<div class="fw-post">
+				<img src="images/img2.jpg">
+
+				<div class="fw-postPrice">2 700<span class="fw-currency"> $</span></div>
+				<a href="">Дайв-сафари в Судане с выходом из Египта</a>
+                    <span class="fw-country">
+                      <i class="fw-icon markpoint"></i> 
+                      Судан
+                    </span>
+                    <span class="fw-date">
+                      <i class="fw-icon clock"></i> 
+                      11 - 25 апреля 2013
+                    </span>
+			</div>
+		</figure>
+		<figure class="personal">
+			<div class="fw-contentSwitch">
+				<div class="fw-contentTitle"></div>
+
+				<div class="fw-content">
+					<span class="_contentTitle">Вакансии</span>
+
+					<div class="fw-data">
+						a
+					</div>
+				</div>
+
+				<div class="fw-content">
+					<span class="_contentTitle">Резюме</span>
+
+					<div class="fw-data">
+						b
+					</div>
+				</div>
+				<div class="fw-contentBlock"></div>
+			</div>
+		</figure>
+
+	</section>
+
+	<!-- <div class="testing">
+	    <a class="fw-sorting" href ="#"><i class="fw-icon inbox"></i><span>Все</span></a>
+	    <a class="fw-sorting" href ="#"><i class="fw-icon news"></i><span>Новости</span></a>
+	    <a class="fw-sorting" href ="#"><i class="fw-icon camera"></i><span>Отчеты</span></a>
+	    <a class="fw-sorting" href ="#"><i class="fw-icon notepad"></i><span>Посты</span></a>
+
+	  </div>
+	  <div class="testing">
+	    <div data-rateit-resetable="false"  data-rateit-ispreset="true" class="rateit"></div>
+
+	  </div>
+
+
+</section>
+<!-- content end-->
+
+<!-- footer start -->
+<footer>
+	<nav>
+		<figure class="clubs">
+			<h3>Клубы</h3>
+			<ul>
+				<li><a href="">Каталог туров</a></li>
+				<li><a href="">Частные поездки</a></li>
+			</ul>
+		</figure>
+
+		<figure class="education">
+			<h3>Обучение</h3>
+			<ul>
+				<li><a href="">Школы дайвинга</a></li>
+				<li><a href="">Персональный инструктор</a></li>
+				<li><a href="">Советы новичкам</a></li>
+			</ul>
+		</figure>
+
+		<figure class="divers">
+			<h3>Дайверы</h3>
+			<ul>
+				<li><a href="">Поиск дайверов</a></li>
+				<li><a href="">Инструкторы и технари</a></li>
+				<li><a href="">Интервью</a></li>
+			</ul>
+		</figure>
+
+		<figure class="technoDiving">
+			<h3>Технодайвинг</h3>
+			<ul>
+				<li><a href="">Энциклопедия</a></li>
+				<li><a href="">Форум</a></li>
+				<li><a href="">Новости</a></li>
+			</ul>
+
+			<ul>
+				<li><a href="">Снаряжение</a></li>
+				<li><a href="">Магазины</a></li>
+				<li><a href="">Сборы</a></li>
+			</ul>
+		</figure>
+
+		<figure class="tours">
+			<h3>Туры и поездки</h3>
+			<ul>
+				<li><a href="">Каталог туров</a></li>
+				<li><a href="">Частные поездки</a></li>
+			</ul>
+		</figure>
+
+		<figure class="work">
+			<h3>Работа</h3>
+			<ul>
+				<li><a href="">Вакансии</a></li>
+				<li><a href="">Резюме</a></li>
+			</ul>
+		</figure>
+
+		<figure class="maps">
+			<h3>Карты</h3>
+			<ul>
+				<li><a href="">Карта клубов</a></li>
+				<li><a href="">Карта дайвсайтов</a></li>
+				<li><a href="">Карта дайвтуров</a></li>
+			</ul>
+		</figure>
+
+		<figure class="aboutProject">
+			<h3>О проекте</h3>
+			<ul>
+				<li><a href="">Вакансии</a></li>
+				<li><a href="">Правила</a></li>
+				<li><a href="">Контакты</a></li>
+			</ul>
+		</figure>
+
+	</nav>
+	<figure class="copyright">
+		<p>© 2013 DiveInfo.ru Все материалы сайта являются собственностью проекта. Копирование запрещено.</p>
+	</figure>
+</footer>
+<!-- footer end -->
+</section>
+<!-- Main container end -->
+<section class="footerSubstrate">
+	<figure class="bottomWave"></figure>
+	<figure class="underWave"></figure>
+	<figure class="copyright"></figure>
+</section>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+
+<script src="js/classie.js"></script>
+<script src="js/modalEffects.js"></script>
+</body>
+</html>

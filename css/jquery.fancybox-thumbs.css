@@ -1,0 +1,106 @@
+#fancybox-thumbs {
+	position: relative;
+	left: 0;
+	width: 100%;
+	min-width: 2500px;
+	z-index: 8050;
+	overflow: hidden;
+	margin:15px 10px 15px 30px;
+}
+.photo-date{
+	color: #939393;
+	text-align: left;
+	margin-top: 20px;
+	font-family: arial;
+	font-size: 14px;
+}
+.fancybox-lock .fancybox-overlay{
+	min-width: 500px;
+}
+div#wrapper{
+	width: 90%;
+	height: 125px;
+	margin-left: 1%;
+	overflow: hidden;
+	left: 25px;
+
+}
+#fancybox-thumbs ul{
+	
+}
+.fancybox-wrap .fw-icon {
+	display: inline-block;
+	background: url(http://diving.mnb-t.com/temp/framework/css/../images/sprite.png) no-repeat;
+	cursor: pointer;
+	vertical-align: middle;
+}
+.fancybox-wrap .fw-icon.clock {
+	background-position: -382px -64px;
+	width: 14px;
+	height: 14px;
+	margin-top: -3px;
+	margin-right: 6px;
+}
+.fancybox-wrap .fw-icon.gallery-arrow-left {
+	position: absolute;
+	left: 18px;
+	margin-top: 57px;
+	width: 18px;
+	height: 34px;
+	background-position: -591px -3px;
+}
+.fancybox-wrap .fw-icon.gallery-arrow-right {
+	position: absolute;
+	right: 15px;
+	margin-top: 57px;
+	width: 18px;
+	height: 30px;
+	background-position: -625px -3px;
+}
+
+#fancybox-thumbs.bottom {
+	bottom: 0px;
+}
+
+#fancybox-thumbs.top {
+	top: 2px;
+}
+
+#fancybox-thumbs ul {
+	position: relative;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#fancybox-thumbs ul li {
+	float: left;
+	margin: 10px 18px 10px 0px;
+	opacity: 0.5;
+}
+
+#fancybox-thumbs ul li.active {
+	opacity: 1;
+	box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.6);
+}
+
+#fancybox-thumbs ul li:hover {
+	opacity: 1;
+}
+
+#fancybox-thumbs ul li a {
+	display: block;
+	position: relative;
+	overflow: hidden;
+
+	background: #111;
+	outline: none;
+}
+
+#fancybox-thumbs ul li img {
+	display: block;
+	position: relative;
+	border: 0;
+	padding: 0;
+	max-width: none;
+}

@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+
+<script src="js/html5shiv.js"></script>
+
+
+<html xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title></title>
+
+	<link rel="stylesheet/less" type="text/css" href="css/styles.less">
+	<link rel="stylesheet/less" type="text/css" href="framework/css/styles.less">
+
+	<link rel="stylesheet/less" type="text/css" href="css/jquery-ui-1.10.3.custom.css">
+
+	<!--
+	<link rel="stylesheet" type="text/css" href="css/style.css" >
+	<link rel="stylesheet" type="text/css" href="framework/css/style.css" >
+	<!-- -->
+	<script type="text/javascript" src="js/vendor.js"></script>
+
+	<script src="js/jquery-1.9.1.js"></script>
+
+	<script src="js/jquery-ui-1.10.3.custom.js"></script>
+
+
+
+
+
+
+	<!-- <link rel="stylesheet/less" type="text/css" href="css/mods.less"> -->
+	<script src="js/less.js" type="text/javascript"></script>
+	<script src="framework/js/fw.js" type="text/javascript"></script>
+	<script src="js/jquery.validate.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+
+
+
+
+	<!-- <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />    -->
+	<link rel="stylesheet" type="text/css" href="css/rateit.css"/>
+	<!-- fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext' rel='stylesheet'
+		 type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700&subset=latin,cyrillic-ext' rel='stylesheet'
+		 type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600&subset=latin,cyrillic-ext' rel='stylesheet'
+		 type='text/css'>
+</head>
+<body>
+
+<div class="topNavWrapper"></div>
+<!-- Main container start -->
+<section class="container">
+	<nav class="top">
+		<a href="">Клубы</a>
+		<a href="">Туры</a>
+		<a href="">Обучение</a>
+		<a href="">Работа</a>
+		<a href="">Дайверы</a>
+		<a href="">Новости</a>
+		<a href="" class="active">Технодайвинг</a>
+		<a href="">Снаряжение</a>
+		<a href="">Энциклопедия</a>
+		<a href="" class="last">Форум</a>
+
+		<figure class="changeLang">
+			<aside>
+				<figure class="fw-icon flag-ru active"><span>RU</span></figure>
+			</aside>
+			<ul>
+				<li><a href="" onclick="click(); return false;"><figure class="fw-icon flag-ua"><span>UA</span></figure></a></li>
+				<li><a href="" onclick="click(); return false;"><figure class="fw-icon flag-us"><span>US</span></figure></a></li>
+			</ul>
+		</figure>
+	</nav>
+
+
+	<!-- Header start -->
+	<header class="notAuth">
+		<section class="onTop">
+			<a href="/" class="logo"><img src="images/logo.png"></a>
+			<figure class="diversMap"></figure>
+
+			<figure class="diversIcon">
+				<a href="#" class="fw-icon map"></a>
+			</figure>
+
+			<figure class="login-block">
+
+				<figure class="authBlock">
+					<span class="login">
+						<i class="fw-icon login-key"></i>
+						<a href="#" class="md-trigger" data-modal="modal-1">вход</a>
+					</span>
+					<span class="register">
+						<i class="fw-icon login-register"></i>
+						<a href="#" class="md-trigger" data-modal="modal-1">регистрация</a>
+					</span>
+				</figure>
+
+				<div class="md-modal md-effect-1" id="modal-1">
+					<div class="md-content">
+
+					<div class="md-close"></div>
+
+					<form id="loginform" action="" method="post">
+
+						<figure class="enter">
+							<h2>
+								Bход
+							</h2>
+							<h3>
+								Регистрация
+							</h3>
+
+							<div class="reg-label">
+
+								<div>
+									<label>E-mail<b>*</b>:</label>
+									<input type="text" class="" value="" name="login">
+								</div>
+
+								<div>
+									<label>Пароль<b>*</b>:</label>
+									<input type="text" class="" value="" name="pswd">
+								</div>
+
+								<div style="padding-left:103px;">
+									<input type="checkbox" name="option1" class="" value="" id="check">
+									<label for="check"><span></span><small>Запомнить меня</small></label>
+									<small><a href="#">Забыли пароль?</a></small>
+								</div>
+
+
+							</div>
+					
+
+							<div class="reg-social">
+								<label>Войти через аккаунт</label>
+
+								<figure class="socialShare">
+								<a href="#" class="fw-icon social-fb" style="border:none"></a>
+								<a href="#" class="fw-icon social-tw" style="border:none"></a>
+								<a href="#" class="fw-icon social-vk" style="border:none"></a>
+								</figure>
+							</div>
+
+
+							<input type="submit" name="enter" class="fw-submit fw-icon btn-enter" value="">
+
+						</figure>
+
+					</form>
+
+					<form id="regform" action="" method="post">	
+						<figure class="registration">
+							<h2>
+								Bход
+							</h2>
+							<h3>
+								Регистрация
+							</h3>
+						
+
+							<div class="reg-label">
+								<div>
+									<label>Имя<b>*</b>:</label>
+									<input type="text" class="reg-name" name="name">
+								</div>
+								<div>
+									<label>Фамилия<b>*</b>:</label>
+									<input type="text" class="reg-surname" name="surname">
+								</div>
+								<div>
+									<label>E-mail<b>*</b>:</label>
+									<input type="text" class="re-email" name="email">
+								</div>
+								<div>								
+									<label>Пароль<b>*</b>:</label>
+									<input type="password" id="reg-password" name="pswd">
+									<a href="#" class="fw-icon eye-icon"></a>
+								</div>
+								<div>
+									<label style="margin-top:13px;">Подтвердить пароль<b>*</b>:</label>
+									<input type="text" class="reg-confirm-pass" name="pswdrepeat">
+								</div>
+								<div>
+									<label style="margin-top:13px;">Дата рождения<b>*</b>:</label>
+									<input type="text" id="reg-birthdate" name="date">
+								</div>
+								<div>
+									<label>Пол<b>*</b>:</label>
+									<input type="radio" name="group1" id="choose1">
+									<label for="choose1"><span></span>Мужской</label>
+									<input type="radio" name="group1" id="choose2">
+									<label for="choose2"><span></span>Женский</label>
+								</div>
+
+							</div>
+
+							<div class="reg-social">
+								<label>Войти как пользователь</label>
+
+								<figure class="socialShare">
+								<a href="#" class="fw-icon social-fb"></a>
+								<a href="#" class="fw-icon social-tw"></a>
+								<a href="#" class="fw-icon social-vk"></a>
+								</figure>
+
+							</div>
+
+							<input type="submit" class="fw-submit fw-icon btn-registration" value="">
+
+
+						</figure>
+					</form>
+							
+					</div>
+				</div>
+
+				<div class="md-overlay"></div><!-- the overlay element -->
+
+				</figure>
+
+				<!---->
+			</figure>
+
+			<figure class="login-block authorized" style="display:none;">
+				<figure class="usersMenu">
+					<span class=""><i class="fw-icon user"></i>Привет, михаил<i class="fw-icon arrow-down"></i></span>
+					<ul>
+						<li><a href=""><i class="fw-icon message"></i>Сообщения<b> &nbsp; &nbsp;</b><span>9</span></a></li>
+						<li><a href=""><i class="fw-icon friends"></i>Друзья<b> &nbsp; &nbsp;</b><span>9</span></a></li>
+						<li><a href=""><i class="fw-icon baloons"></i>Профайл</a></li>
+						<li><a href=""><i class="fw-icon settings"></i>Настройки</a></li>
+						<li><a href=""><i class="fw-icon exit"></i>Выход</a></li>
+					</ul>
+				</figure>
+			</figure>
+
+			<figure class="socialShare">
+				<a href="#" class="fw-icon social-fb"></a>
+				<a href="#" class="fw-icon social-tw"></a>
+				<a href="#" class="fw-icon social-vk"></a>
+			</figure>
+		</section>
+
+
+
+		<section class="tabs fw-tabs">
+			<table class="divePageMenu mainNavigation">
+				<tbody>
+					<tr>
+					<td class="fw-tab first-tab active">
+						<a href="#"><i class="fw-icon ship"></i>Найти дайвклуб</a>
+					</td>
+
+					<td class="fw-tab second-tab">
+						<a href="#"><i class="fw-icon designator"></i>Найти тур</a>
+					</td>
+
+					<td class="fw-tab third-tab">
+						<a href="#"><i class="fw-icon lifebuoy"></i>Найти курсы</a>
+					</td>
+
+					<td class="fw-tab fourth-tab">
+						<a href="#"><i class="fw-icon anchor"></i>Найти работу</a>
+					</td>
+
+					<td class="fw-tab five-tab">
+						<a href="#"><i class="fw-icon diver"></i>Найти дайвера</a>
+					</td>
+
+					<td class="fw-tab last-tab">
+						<a href="#"><i class="fw-icon magnifier"></i>Общий поиск</a>
+					</td>
+
+
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section class="searchTabs searchDiveClub">
+			<div class="fw-tab-block diveclub">
+				<form>
+					<input type="text" class="fw-white" value="D-diver">
+
+					 <select data-id="club-country">
+					 	<option>Все страны</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+
+					</select> 
+
+					<div data-id="club-country" data-label="Все страны" class="dropdown fw-dropdown fw-white">
+						<ul></ul>
+					</div>
+
+					<select data-id="club-city">
+						<option value="4">Все города</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+
+					</select> 
+
+					<div data-id="club-city" data-label="Все города" class="dropdown fw-dropdown fw-white">
+						<ul></ul>
+					</div>
+
+					<select data-id="club-school">
+						<option value="7">Все школы</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+
+					</select> 
+
+					<div data-id="club-school" data-label="Все школы" class="dropdown fw-dropdown fw-white">
+						<ul></ul>
+					</div>
+					<input type="submit" class="fw-submit fw-icon btn-find" value=""/>
+				</form>
+			</div>
+		</section>
+
+		<section class="searchTabs searchTour">
+			<div class="fw-tab-block diveclub">
+				<form>
+					<label>
+						Страна или регион:</label>
+
+					<div data-id="tour-country" data-label="Все страны" class="dropdown fw-dropdown fw-white">
+						<ul></ul>
+					</div>
+
+					<label>Дата начала:</label>
+
+					<input type="text" class="fw-white" id="calendarTours">
+
+					<input type="checkbox" name="option2" class="" value="" id="check1">
+					<label for="check1"><span></span><small>&#177;3 дня</small></label>
+
+					<a href="">Расширенный поиск</a><br>
+
+					<label>Тип тура:</label>
+
+					<div data-id="tour-Kind" data-label="Все типы" class="dropdown fw-dropdown fw-white">
+						<ul></ul>
+					</div>
+
+					<label>Стоимость:</label>
+					<label>от</label>
+					<input type="text" class="fw-white price">
+					<label>до</label>
+					<input type="text" class="fw-white price">
+
+
+
+					<div data-id="tour-currency" data-label="RUR" class="dropdown fw-dropdown fw-white currency">
+						<ul></ul>
+					</div>
+					<input type="submit" class="fw-submit fw-icon btn-find" value=""/>
+
+					<select data-id="tour-country">
+						<option value="7">Все страны</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+
+					</select> 
+
+					<select data-id="tour-Kind">
+						<option value="7">Все типы</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+
+					</select>
+
+					<select data-id="tour-currency">
+
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+
+					</select>
+				</form>
+			</div>
+		</section>
+
+		<section class="searchTabs searchJob">
+			<div class="fw-tab-block diveclub">
+				<div style="height:38px;">
+					<h2 class='active'>Поиск вакансий</h2>
+					<a href="" onclick="click(); return false;">Найти сотрудника</a>
+				</div>
+				<form>
+					<label>Страна:</label>
+
+
+					<div data-id="job-country" data-label="Все страны" class="dropdown fw-dropdown fw-white">
+						<ul></ul>
+					</div>
+
+					<label>Город:</label>
+
+
+
+					<div data-id="job-city" data-label="Все города" class="dropdown fw-dropdown fw-white">
+						<ul></ul>
+					</div><br>
+
+					<label>Поиск:</label>
+
+					<input type="text" class="fw-white search">
+
+					<input type="submit" class="fw-submit fw-icon btn-find-vacancy" value=""/>
+
+					<select data-id="job-country">
+						<option value="7">Все страны</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+
+					</select>
+					<select data-id="job-city">
+						<option value="7">Все города</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+
+					</select> 
+
+				</form>
+			</div>
+
+			<div class="fw-tab-block diveclub" style="display:none;">
+				<div style="height:38px;">
+					<h2>Поиск вакансий</h2>
+					<a href="" class='active' onclick="click(); return false;">Найти сотрудника</a>
+				</div>
+				<form>
+					<label>Страна:</label>
+
+
+					<div data-id="job-country-1" data-label="Все страны" class="dropdown fw-dropdown fw-white">
+						<ul></ul>
+					</div>
+
+					<label>Город:</label>
+
+
+
+					<div data-id="job-city-1" data-label="Все города" class="dropdown fw-dropdown fw-white">
+						<ul></ul>
+					</div>
+
+					<label>Сертификат:</label>
+
+					<div data-id="job-certificates" data-label="Все сертификаты" class="dropdown fw-dropdown fw-white">
+						<ul></ul>
+					</div><br>
+
+					<label>Поиск:</label>
+
+					<input type="text" class="fw-white search">
+
+					<input type="submit" class="fw-submit fw-icon btn-find-resume" value=""/>
+
+					<select data-id="job-country-1">
+						<option value="7">Все страны</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+
+					</select>
+					<select data-id="job-city-1">
+						<option value="7">Все города</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+
+					</select> 
+					<select data-id="job-certificates">
+						<option value="7">Все сертификаты</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+
+					</select> 
+
+				</form>
+			</div>
+		</section>
+
+		<section class="searchTabs searchDiver">
+			<div class="fw-tab-block diveclub">
+				<form>
+					<input type="text" class="fw-white" value="D-diver">
+
+					 <select data-id="diver-country">
+					 	<option value="7">Все страны</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+
+					</select> 
+
+					<div data-id="diver-country" data-label="Все страны" class="dropdown fw-dropdown fw-white">
+						<ul></ul>
+					</div>
+
+					<select data-id="diver-city">
+						<option value="7">Все города</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+
+					</select> 
+
+					<div data-id="diver-city" data-label="Все города" class="dropdown fw-dropdown fw-white">
+						<ul></ul>
+					</div>
+
+					<select data-id="diver-school">
+						<option value="7">Все школы</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+
+					</select> 
+
+					<div data-id="diver-school" data-label="Все школы" class="dropdown fw-dropdown fw-white">
+						<ul></ul>
+					</div>
+					<input type="submit" class="fw-submit fw-icon btn-find" value=""/>
+				</form>
+			</div>
+		</section>
+
+
+	</header>
+	<!-- Header end -->
+
+
+	<section class="content">
+
+		<figure class="breadCrumbs">
+		    <span><a href="">Главная</a></span>
+		    <i class="fw-icon breadCrumbsIco"></i>
+		    <span>Новости</span>
+		    <i class="fw-icon breadCrumbsIco"></i>
+	    </figure>
+
+		<div class="backToUserPage" style="margin-bottom:20px">
+		    <i class="fw-icon backToUserPageIco"></i>
+		    <a href="">Назад к новостям</a>
+		</div>
+
+		<section class="left">
+
+			<h2 class="bold" style="font-size:34px;">Женские модели BCD</h2>
+			
+			<div class="news-page-time">
+				<i class="fw-icon clock"></i>
+				<span>11.24.2013</span>
+			</div>
+
+			<section class="news-page-item">
+
+				<figure>
+					<a href="">
+						<img src="images/img5.jpg">
+					</a>
+				</figure>	
+				
+				<div>
+					<p>Международный подводный арзиологический проект Международный подводный арзиологический проект...Международный подводный арзиологический проектМеждународный подводный арзиологический проектМеждународный подводный арзиологический проект
+					</p>
+					<h2>Oceanic hera women</h2>
+					<p>Международный подводный арзиологический проект Международный подводный арзиологический проект...Международный подводный арзиологический проектМеждународный подводный арзиологический проектМеждународный подводный арзиологический проектМеждународный подводный арзиологический проект Международный подводный арзиологический проект...Международный подводный арзиологический проектМеждународный подводный арзиологический проектМеждународный подводный арзиологический проект</p>
+
+				</div>	
+	
+			</section>
+
+			<section class="news-page-item">
+
+				<figure>
+					<a href="">
+						<img src="images/clubs/dive_foto1.png">
+					</a>
+				</figure>	
+				
+				<div>
+					<h2>Oceanic hera women</h2>
+
+					<p>Международный подводный арзиологический проект Международный подводный арзиологический проект...Международный подводный арзиологический проектМеждународный подводный арзиологический проектМеждународный подводный арзиологический проектМеждународный подводный арзиологический проект Международный подводный арзиологический проект...Международный подводный арзиологический проектМеждународный подводный арзиологический проектМеждународный подводный арзиологический проект</p>
+
+				</div>	
+	
+			</section>
+
+			<section class="news-page-item">
+
+				<figure>
+					<a href="">
+						<img src="images/img5.jpg">
+					</a>
+				</figure>	
+				
+				<div>
+					<p>Международный подводный арзиологический проект Международный подводный арзиологический проект...Международный подводный арзиологический проектМеждународный подводный арзиологический проектМеждународный подводный арзиологический проект
+					</p>
+					<h2>Oceanic hera women</h2>
+					<p>Международный подводный арзиологический проект Международный подводный арзиологический проект...Международный подводный арзиологический проектМеждународный подводный арзиологический проектМеждународный подводный арзиологический проектМеждународный подводный арзиологический проект Международный подводный арзиологический проект...Международный подводный арзиологический проектМеждународный подводный арзиологический проектМеждународный подводный арзиологический проект</p>
+
+				</div>	
+	
+			</section>
+
+			<section class="news-page-item">
+
+				<figure>
+					<a href="">
+						<img src="images/clubs/dive_foto1.png">
+					</a>
+				</figure>	
+				
+				<div>
+					<h2>Oceanic hera women</h2>
+
+					<p>Международный подводный арзиологический проект Международный подводный арзиологический проект...Международный подводный арзиологический проектМеждународный подводный арзиологический проектМеждународный подводный арзиологический проектМеждународный подводный арзиологический проект Международный подводный арзиологический проект...Международный подводный арзиологический проектМеждународный подводный арзиологический проектМеждународный подводный арзиологический проект</p>
+
+				</div>	
+	
+			</section>
+
+			<div>
+				<figure class="socialNews">
+					Поделиться:&nbsp;
+					<a href="#" class="fw-icon social-fb-small"></a>
+					<a href="#" class="fw-icon social-tw-small"></a>
+					<a href="#" class="fw-icon social-vk-small"></a>
+					<span><i class="fw-icon star-grey"></i><a href="">Добавить в изюранное</a></span>
+				</figure>
+			</div>
+
+			<h2 class="bold">Другие события</h2>
+			<section class="newsPreview singleNews-text">
+
+				
+				<div>
+					<div>
+							<i class="fw-icon clock"></i>
+							<span>11.24.2013</span>
+							<a href="">Античный город Акра</a>
+							<p>Международный подводный арзиологический проект...Международный подводный арзиологический проект...Международный подводный.</p>
+					</div>
+				</div>	
+	
+			</section>
+
+			<section class="newsPreview singleNews-text">
+
+				
+				<div>
+					<div>
+							<i class="fw-icon clock"></i>
+							<span>11.24.2013</span>
+							<a href="">Античный город Акра</a>
+							<p>Международный подводный арзиологический проект...Международный подводный арзиологический проект..</p>
+					</div>
+				</div>	
+	
+			</section>
+
+		</section> 
+
+		<!-- .left END -->
+
+		<section class="right">
+			<div class="newsNav">
+				<ul>
+					<li class="active"><a href="" onclick="click(); return false;">Главное</a></li>
+					<li><a href="" onclick="click(); return false;">В мире</a></li>
+					<li><a href="" onclick="click(); return false;">Интервью профессионалов</a></li>
+					<li><a href="" onclick="click(); return false;">Наука</a></li>
+					<li><a href="" onclick="click(); return false;">Новости дайвклубов</a></li>
+					<li><a href="" onclick="click(); return false;">Оборудование и снаряжение</a></li>
+					<li><a href="" onclick="click(); return false;">События</a></li>
+					<li><a href="" onclick="click(); return false;">Посты пользователей</a></li>
+				</ul>
+			</div>
+
+			<figure class="clubsBaner">
+				<a href=""><img src="images/clubs/clubBaner.png"></a>
+			</figure>
+
+			<figure class="facebook">
+				<a href=""><img src="images/clubs/facebook.png"></a>
+			</figure>
+		</section> <!-- .right END -->
+
+	</section> <!-- content END -->
+
+	<section style="margin-bottom:100px;"></section>
+
+	<!-- footer start -->
+	<footer>
+		<nav>
+			<figure class="clubs">
+				<h3>Клубы</h3>
+				<ul>
+					<li><a href="">Каталог туров</a></li>
+					<li><a href="">Частные поездки</a></li>
+				</ul>
+			</figure>
+
+			<figure class="education">
+				<h3>Обучение</h3>
+				<ul>
+					<li><a href="">Школы дайвинга</a></li>
+					<li><a href="">Персональный инструктор</a></li>
+					<li><a href="">Советы новичкам</a></li>
+				</ul>
+			</figure>
+
+			<figure class="divers">
+				<h3>Дайверы</h3>
+				<ul>
+					<li><a href="">Поиск дайверов</a></li>
+					<li><a href="">Инструкторы и технари</a></li>
+					<li><a href="">Интервью</a></li>
+				</ul>
+			</figure>
+
+			<figure class="technoDiving">
+				<h3>Технодайвинг</h3>
+				<ul>
+					<li><a href="">Энциклопедия</a></li>
+					<li><a href="">Форум</a></li>
+					<li><a href="">Новости</a></li>
+				</ul>
+
+				<ul>
+					<li><a href="">Снаряжение</a></li>
+					<li><a href="">Магазины</a></li>
+					<li><a href="">Сборы</a></li>
+				</ul>
+			</figure>
+
+			<figure class="tours">
+				<h3>Туры и поездки</h3>
+				<ul>
+					<li><a href="">Каталог туров</a></li>
+					<li><a href="">Частные поездки</a></li>
+				</ul>
+			</figure>
+
+			<figure class="work">
+				<h3>Работа</h3>
+				<ul>
+					<li><a href="">Вакансии</a></li>
+					<li><a href="">Резюме</a></li>
+				</ul>
+			</figure>
+
+			<figure class="maps">
+				<h3>Карты</h3>
+				<ul>
+					<li><a href="">Карта клубов</a></li>
+					<li><a href="">Карта дайвсайтов</a></li>
+					<li><a href="">Карта дайвтуров</a></li>
+				</ul>
+			</figure>
+
+			<figure class="aboutProject">
+				<h3>О проекте</h3>
+				<ul>
+					<li><a href="">Вакансии</a></li>
+					<li><a href="">Правила</a></li>
+					<li><a href="">Контакты</a></li>
+				</ul>
+			</figure>
+
+		</nav>
+		<figure class="copyright">
+			<p>© 2013 DiveInfo.ru Все материалы сайта являются собственностью проекта. Копирование запрещено.</p>
+		</figure>
+	</footer> <!-- FOOTER END -->
+</section>
+<!-- Main container END -->
+
+<section class="footerSubstrate">
+	<figure class="bottomWave"></figure>
+	<figure class="underWave"></figure>
+	<figure class="copyright"></figure>
+</section>
+
+
+<!--
+<script type="text/javascript" src="js/vendor.js"></script>
+-->
+<script type="text/javascript" src="js/main.js"></script>
+
+
+
+<script src="js/classie.js"></script>
+<script src="js/modalEffects.js"></script>
+
+
+
+
+</body>
+</html>
